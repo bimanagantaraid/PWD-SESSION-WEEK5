@@ -7,6 +7,7 @@
     <title>Form Users</title>
 </head>
 <body>
+    <!-- form input user -->
     <h2>Tambah User</h2>
     <form action="input_user.php" method="post">
         <table>

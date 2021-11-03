@@ -7,6 +7,7 @@
     <title>Form Login</title>
 </head>
 <body>
+    <!-- form login -->
     <h2>Login</h2>
     <form action="cek_login.php" method="post">
         <table border="1">

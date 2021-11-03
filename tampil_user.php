@@ -19,14 +19,19 @@
             <th>Aksi</th>
         </tr>
         <?php 
-
+        // melakukan koneksi ke database
         include "koneksi.php";
         
-        $sql = "SELECT * FROM users ORDER BY id_user DESC";
+        // query mengambil data user dari database
+        $sql = "SELECT * FROM users ORDER BY id_user";
+        // eksekusi query
         $tampil = mysqli_query($con, $sql);
+        // cek data apakah tersedia
         if(mysqli_num_rows($tampil)>0){
             $no = 1;
+            // looping data dari database
             while($r = mysqli_fetch_array($tampil)){
+                // menampilkan data
                 echo "<tr>";
                 echo "<td>".$no."</td>";
                 echo "<td>".$r["id_user"]."</td>";
